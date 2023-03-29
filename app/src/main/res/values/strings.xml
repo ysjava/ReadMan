@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">nnsman</string>
+    <string name="menu_ranking">排行</string>
+    <string name="menu_bookshelf">书架</string>
+</resources>

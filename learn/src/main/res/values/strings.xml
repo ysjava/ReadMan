@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">learn</string>
+    <string name="txt1">姓名：%1$s</string>
+    <string name="txt2">性别：%1$s</string>
+    <string name="txt3">年龄：%1$d</string>
+    <string name="txt4">体重：%1$skg</string>
+    <string name="txt5">样貌：%1$s分</string>
+</resources>

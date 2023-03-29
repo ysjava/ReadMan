@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/navigation_ranking">
+
+    <fragment
+        android:id="@+id/navigation_ranking"
+        android:name="com.learndm.nnsman.novelreader.ui.home.ranking.RankingFragment"
+        android:label="RankingFragment"
+        tools:layout="@layout/fragment_ranking">
+        <action
+            android:id="@+id/action_navigation_ranking_to_readActivity"
+            app:destination="@id/readActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bookshelf"
+        android:name="com.learndm.nnsman.novelreader.ui.home.bookshelf.BookshelfFragment"
+        android:label="BookshelfFragment"
+        tools:layout="@layout/fragment_bookshelf">
+        <action
+            android:id="@+id/action_navigation_bookshelf_to_searchActivity"
+            app:destination="@id/searchActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/searchActivity"
+        android:name="com.learndm.nnsman.novelreader.ui.search.SearchActivity"
+        android:label="SearchActivity" />
+    <activity
+        android:id="@+id/readActivity"
+        android:name="com.learndm.nnsman.novelreader.ui.read.ReadActivity"
+        android:label="ReadActivity"
+        tools:layout="@layout/activity_read" >
+        <argument
+            android:name="bookurl"
+            app:argType="string" />
+    </activity>
+
+</navigation>

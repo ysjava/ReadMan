@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_seek_chapter"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_test_progress"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="跳至 第一百八十三章 复活吧我的爱人复活吧我的爱人"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</FrameLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color9p"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_luminance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="亮度"
+            android:textColor="@color/color9pp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_sun1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sun_line"
+            app:tint="@color/color9pp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:max="4095"
+            android:maxHeight="3dp"
+            android:min="1"
+            android:progressDrawable="@drawable/seek_bar_bg"
+            android:thumb="@drawable/seek_bar_thumb"
+            tools:progress="2000" />
+
+        <ImageView
+            android:id="@+id/iv_sun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sun_line"
+            app:tint="@color/color9pp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="字号"
+            android:textColor="@color/color9pp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_font_size_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_read_setting_font"
+            android:gravity="center"
+            android:text="A-"
+            android:textColor="@color/color9pp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_font_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="24"
+            android:textColor="@color/color9pp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_font_size_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_read_setting_font"
+            android:gravity="center"
+            android:text="A+"
+            android:textColor="@color/color9pp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="翻页"
+            android:textColor="@color/color9pp"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_animation_over"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="覆盖"
+                android:textColor="@color/color9pp" />
+
+            <RadioButton
+                android:id="@+id/rb_animation_simulation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="仿真"
+                android:textColor="@color/color9pp" />
+
+            <RadioButton
+                android:id="@+id/rb_animation_scroll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="滚动"
+                android:textColor="@color/color9pp" />
+
+            <RadioButton
+                android:id="@+id/rb_animation_not"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="无"
+                android:textColor="@color/color9pp" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_read_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="背景"
+            android:textColor="@color/color9pp"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/list_bg"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_read_setting_bg" />
+    </LinearLayout>
+
+
+</LinearLayout>

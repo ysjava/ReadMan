@@ -1,0 +1,10 @@
+CName + Job
+
+fun plus(context):
+context.fold(this){ acc,element ->
+//this : CName    context : Job
+//acc : this:CName  element : context:Job
+
+//c : handler  this : CombinedContext(CName + Job)
+-> CombinedContext(CombinedContext(CName + Job)  + Handler)
+}
