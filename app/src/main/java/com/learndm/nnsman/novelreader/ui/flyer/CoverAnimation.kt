@@ -15,7 +15,7 @@ import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.min
 
-class CoverAnimation(override var readerView: ReaderView, override val listener: TurnPageListener) : TurnPageAnimation() {
+class CoverAnimation(override var readerView: ReaderView, override val listener: TurnPageListener) : TurnPageAnimation {
     private lateinit var oneBitmap: Bitmap
     private lateinit var twoBitmap: Bitmap
 

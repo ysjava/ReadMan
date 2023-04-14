@@ -13,7 +13,7 @@ import kotlin.math.min
 
 class ReaderDataProcessor(
     val book: Book,
-    override val readerView: ReaderView,
+    override var readerView: ReaderView,
     override val dataSource: DataSource,
     override val chapterChangeListener: OnChapterChangeListener? = null,
 ) : DataProcessor {

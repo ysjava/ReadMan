@@ -6,6 +6,4 @@ interface OnReaderViewTouchListener {
     fun canMove():Boolean
     //恢复可移动的状态, 当canMove为false,事件为up时, 通知ReadActivity进行菜单栏隐藏.
     fun resumeMovement()
-
-//    fun chapterCut()
 }
